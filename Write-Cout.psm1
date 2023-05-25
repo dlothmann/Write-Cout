@@ -35,7 +35,7 @@
 #>
 
 function Write-Cout{
-    param (
+    [CmdletBinding()]Param (
         [Parameter(Position=1)]
         [string] $InputObject,
         [ValidateSet("Black","Blue","Cyan","DarkBlue","DarkCyan","DarkGrey","DarkGreen","DarkMagenta","DarkRed","DarkYellow","Gray","Green","Magenta","Red","White","Yellow")]
